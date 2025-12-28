@@ -1,0 +1,36 @@
+@import url("./variables.css");
+@import url('./top-bar.css');
+/* Defaul Style Start  */
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  direction: rtl;
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+  line-height: 1.6;
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+i {
+  user-select: none;
+  font-style: normal;
+}
+/* Defaul Style End  */
+
+/* Global Style Start  */
+
+
