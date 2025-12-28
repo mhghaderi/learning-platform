@@ -1,5 +1,5 @@
 @import url("./variables.css");
-@import url('./top-bar.css');
+@import url("./top-bar.css");
 /* Defaul Style Start  */
 
 html {
@@ -31,6 +31,123 @@ i {
 }
 /* Defaul Style End  */
 
-/* Global Style Start  */
+/* NavBar Style Start  */
+.main-header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 1.5rem;
+}
 
+.main-header__right {
+  display: flex;
+  align-items: center;
+}
+.main-header__left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.main-header__logo {
+  width: 65px;
+  margin-left: 2rem;
+}
+.main-header__logo img {
+  width: 100%;
+  border-radius: 50rem;
+}
 
+.main-header__menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.main-header__item {
+  position: relative;
+  display: flex;
+}
+.main-header__dropdown {
+  display: flex;
+  flex-direction: column;
+  /* gap: rem; */
+  background-color: var(--dropdown-color);
+  /* padding: 1rem; */
+  position: absolute;
+  width: 24rem;
+  top: 300%;
+  border-radius: 1rem;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.15s ease-in;
+  border-top: 3px solid var(--secondary-color);
+  overflow: hidden;
+}
+.main-header__item:hover .main-header__dropdown {
+  top: 100%;
+  opacity: 10;
+  visibility: visible;
+}
+.fa-angle-down {
+  transition: all 0.2s ease;
+}
+.main-header__item:hover .fa-angle-down {
+  opacity: 0.5;
+  transform: rotate(180deg);
+}
+.main-header__dropdown li {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+.main-header__dropdown li:hover {
+  background-color: var(--dropdown-color-hovered);
+  /* transform: translateX(-5px); */
+}
+.main-header__search {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  border-radius: 1rem;
+}
+.main-header__shopping-cart {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  transition: all 0.2s ease;
+}
+.main-header__profile {
+  font-weight: 500;
+  color: var(--dark-color);
+  width: max-content;
+  height: 4rem;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--primary-color);
+  border-radius: 1rem;
+  transition: all 0.2s ease;
+}
+.main-header__profile:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+.main-header__profile:hover,
+.main-header__shopping-cart:hover,
+.main-header__search:hover {
+  transform: scale(1.05);
+}
+
+/* NavBar Style End  */

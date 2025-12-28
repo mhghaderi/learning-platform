@@ -2,7 +2,7 @@
 .top-bar {
   color: var(--black-color);
   background-color: #f0f2f7;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
 }
 .top-bar__content {
   display: flex;
@@ -13,10 +13,12 @@
 .top-bar__right ul {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  font-size: 1.4rem;
+  gap: 3rem;
 }
 .top-bar__left {
   display: flex;
+  font-size: 1.4rem;
   align-items: center;
   gap: 3rem;
 }

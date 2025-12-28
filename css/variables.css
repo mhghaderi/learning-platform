@@ -1,7 +1,17 @@
 :root {
-  --primary-color: #3498db;
+  --primary-color: #0030ff;
+  --primary-color-darker: #0023c0;
+  --primary-color-lighter: #5473ff;
   --secondary-color: #2ecc71;
+  --secondary-color-darker: #13974a;
+  --secondary-color-lighter: #4ef895;
   --white-color: #ffffff;
+  --white-color-dark: #e9e9e9;
+  --white-color-darker: #bbbbbb;
   --black-color: #464749;
+  --black-color-lighter: #7e8083;
+  --black-color-darker: #000000;
+  --dropdown-color : #f5f5f5;
+  --dropdown-color-hovered : #d3d3d3;
   --font-family: "IRANSans", sans-serif;
 }
