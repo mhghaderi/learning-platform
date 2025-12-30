@@ -1,0 +1,102 @@
+.courses-header {
+  position: relative;
+  margin-top: 2rem;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.courses-header__right::before {
+  content: "";
+  position: absolute;
+  right: 8px;
+  transform: rotate(8deg);
+  width: 3px;
+  height: 100%;
+  background-color: var(--primary-color);
+}
+.courses-header__right h3 {
+  font-weight: 600;
+  font-size: 2rem;
+  background-color: var(--primary-color-very-light);
+}
+.courses-header__left {
+  background-color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  color: var(--white-color);
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.courses-carts {
+  margin-top: 3rem;
+  display: flex;
+  padding: 0 2rem;
+  flex-direction: column;
+}
+
+.courses-cart {
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  max-width: 400px;
+}
+
+.courses__title {
+  margin-top: 1.6rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: large;
+  text-align: right;
+  margin-right: 1.5rem;
+}
+.couarses__instructor-rate {
+  display: flex;
+  align-items: center;
+ margin: 0.5rem 1.5rem;
+  justify-content: space-between;
+}
+.courses__instructor {
+  display: flex;
+  align-content: center;
+  gap: 1rem;
+  font-size: smaller;
+}
+.courses__instructor svg {
+  width: 15px;
+}
+.courses__rate {
+  font-size: 1.2rem;
+}
+.courses__students-price {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 1.5rem;
+  justify-content: space-between;
+}
+.courses__students {
+  display: flex;
+  align-content: center;
+  gap: 1rem;
+  font-size: smaller;
+}
+.courses__students svg {
+  width: 20px;
+}
+.courses__price {
+}
+.courses__show-details-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  /* margin: 2rem 0; */
+  border-top: 1px solid #9c9c9c;
+  color: var(--secondary-color-darker);
+}
+.courses__show-details-btn p {
+  line-height: 4rem;
+  cursor: pointer;
+}

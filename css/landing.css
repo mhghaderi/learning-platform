@@ -1,0 +1,75 @@
+.landing {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/landing-wallpaper.png") center/cover no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 12rem 2rem;
+}
+.landing__title {
+  color: var(--white-color);
+  font-size: 4rem;
+  font-weight: 800;
+}
+.landing__subtitle {
+  color: var(--white-color);
+  font-size: 2.5rem;
+  margin: 1rem 0 4rem 0;
+}
+.landing__searchbar {
+  position: relative;
+  max-width: 700px;
+  margin: 3rem auto;
+  /* overflow: hidden; */
+}
+.landing__searchbar-input {
+  all: unset;
+  box-sizing: border-box;
+  text-align: right;
+  background-color: var(--white-color);
+  width: 100%;
+  padding: 1.5rem 2rem;
+  border-radius: 1.3rem;
+  border: none;
+}
+.landing__searchbar-btn {
+  border: none;
+  border-radius: 1rem;
+  position: absolute;
+  background-color: var(--primary-color);
+  width: 47px;
+  height: 47px;
+  top: 4px;
+  left: 4px;
+  color: var(--white-color);
+  z-index: 100;
+}
+.landing-status {
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.landing-status__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2rem;
+}
+.landing-status__item:last-child {
+  margin-right: 5rem;
+}
+.landing-status__item svg {
+  fill: var(--white-color);
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+.landing-status__counter {
+  font-size: 2.2rem;
+}
+.landing-status__text {
+  font-size: 2rem;
+  text-wrap: nowrap;
+}
